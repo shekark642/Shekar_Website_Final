@@ -11,7 +11,8 @@
       "name": "storage.location",
       "type": "java.lang.String",
       "description": "Folder location for storing files",
-      "sourceType": "com.example.sping_portfolio.controllers.storage.StorageProperties"
+      "sourceType": "com.example.sping_portfolio.controllers.storage.StorageProperties",
+      "defaultValue": "upload-dir"
     }
   ],
   "hints": []
