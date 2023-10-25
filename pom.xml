@@ -12,7 +12,7 @@
     <groupId>com.example</groupId>
     <artifactId>serving-web-content</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>p2-chickens</name>
+    <name>Shekar_Website_Final</name>
     <description>CSA project for Spring Boot</description>
     <properties>
         <java.version>11</java.version>
