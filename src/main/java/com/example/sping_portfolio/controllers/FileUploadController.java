@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
@@ -35,13 +37,20 @@ public class FileUploadController {
     @GetMapping("/upload")
     public String listUploadedFiles(Model model) throws IOException {
 
+
         model.addAttribute("files", storageService.loadAll().map(
                         path -> MvcUriComponentsBuilder.fromMethodName(FileUploadController.class,
                                 "serveFile", path.getFileName().toString()).build().toUri().toString())
                 .collect(Collectors.toList()));
 
+
+
+
+
         return "project/upload";
     }
+
+
 
     @GetMapping("/files/{filename:.+}")
     @ResponseBody

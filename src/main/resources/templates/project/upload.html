@@ -2,14 +2,29 @@
 <html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
       layout:decorate="~{layout1}" lang="en">
 
+
+
 <body style="background: linear-gradient(135deg, rgba(41,161,54,1) 0%, rgba(131,140,125,1) 51%, rgba(38,38,38,1) 100%);">
+
+
+
+
+
+
 <div layout:fragment="content" th:remove="tag">
 
-<div th:if="${message}">
+    <p style = " color: white; font-size: 25px ; padding-bottom: 50px; padding-top: 50px">*** Once images are uploaded, they are available for the public to see until the server is reset. Once uploaded, images cannot be removed. Be respectful and enjoy :) ***</p>
+
+
+    <div th:if="${message}">
     <h2 th:text="${message}"></h2>
 </div>
 
+
+
+
 <div style="margin-top: 10px;">
+
     <form method="POST" enctype="multipart/form-data" action="/upload">
         <table>
             <tr>
@@ -33,6 +48,7 @@
         </li>
     </ul>
 </div>
+
 </div>
 </body>
 </html>

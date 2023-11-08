@@ -16,13 +16,13 @@ a:hover{
 }
 
 .about-bg {
-  background-image: url("../images/bluebackground2.jpg");
+  background-image: url("../images/bluebackground1.jpg");
   /* background: linear-gradient(127deg, rgba(11,166,30,1) 0%, rgba(48,235,109,1) 51%, rgba(0,255,194,1) 100%); */
   background-attachment: fixed;
 }
 
 .ns-bg {
-  background-image: url("../images/bluebackground2");
+  background-image: url("../images/bluebackground1");
   background-attachment: fixed;
   background-size: cover;
 }
