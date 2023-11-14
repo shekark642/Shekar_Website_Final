@@ -16,4 +16,11 @@ public class Greet {
         model.addAttribute("name", name); // MODEL is passed to html
         return "greet"; // returns HTML VIEW (greeting)
     }
+
+    @GetMapping("/toot")
+    // CONTROLLER handles GET request for /greeting, maps it to greeting() and does variable bindings
+
+    public String greet() {
+        return "greet"; // returns HTML VIEW (greeting)
+    }
 }

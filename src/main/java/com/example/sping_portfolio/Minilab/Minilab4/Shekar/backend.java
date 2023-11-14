@@ -7,7 +7,7 @@ public abstract class backend {
     Duration timeElapsed;
     int num1;
 
-    public abstract int findsum();
+    public abstract float findsum();
     public abstract String getMethod();
 
     //return runtime
